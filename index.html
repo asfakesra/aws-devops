@@ -37,49 +37,8 @@ body {font-family: "Lato", sans-serif;}
 </head>
 <body>
 
-<!-- Add a form for username and password -->
-<form id="loginForm">
-  <label for="username">Username:</label>
-  <input type="text" id="username" name="username" required>
-
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password" required>
-
-  <button type="button" onclick="login()">Login</button>
-</form>
-
-<p>Test app for AWS CodePipeline</p>
-
-<div id="London" class="tabcontent">
-  <h1>MLOps Masteclass for ML and LLM Feb 24</h1>
-  <p>Machine Learning operations (MLOps)</p>
-</div>
-
-<!-- Add other tab content divs -->
-
-<script>
-function openCity(cityName, elmnt, color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(cityName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-
-function login() {
-  // Implement your login logic here
-  alert("Login clicked. Implement your login logic.");
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-   
-</body>
-</html>
+<!-- Login Section -->
+<div>
+  <h2>Login</h2>
+  <form id="loginForm">
+    <label for="u
