@@ -37,6 +37,17 @@ body {font-family: "Lato", sans-serif;}
 </head>
 <body>
 
+<!-- Add a form for username and password -->
+<form id="loginForm">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+
+  <button type="button" onclick="login()">Login</button>
+</form>
+
 <p>Test app for AWS CodePipeline</p>
 
 <div id="London" class="tabcontent">
@@ -44,28 +55,10 @@ body {font-family: "Lato", sans-serif;}
   <p>Machine Learning operations (MLOps)</p>
 </div>
 
-<div id="Paris" class="tabcontent">
-  <h1>AWS MLOps Pipelines</h1>
-  <p>AWS Machine Learning operations.</p> 
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h1>S3 Bucket MLOps</h1>
-  <p>Amazon Simple Storage Service (Amazon S3).</p>
-</div>
-
-<div id="Oslo" class="tabcontent">
-  <h1>AWS SageMaker Pipelines</h1>
-  <p>MLOps Pipelines.</p>
-</div>
-
-<button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">MLOps</button>
-<button class="tablink" onclick="openCity('Paris', this, 'green')">AWS MLOps</button>
-<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Amazon S3</button>
-<button class="tablink" onclick="openCity('Oslo', this, 'orange')">MLOps Pipelines for prod</button>
+<!-- Add other tab content divs -->
 
 <script>
-function openCity(cityName,elmnt,color) {
+function openCity(cityName, elmnt, color) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -77,11 +70,16 @@ function openCity(cityName,elmnt,color) {
   }
   document.getElementById(cityName).style.display = "block";
   elmnt.style.backgroundColor = color;
-
 }
+
+function login() {
+  // Implement your login logic here
+  alert("Login clicked. Implement your login logic.");
+}
+
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
    
 </body>
-</html> 
+</html>
